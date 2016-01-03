@@ -1,10 +1,98 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 * {
-  background-color: grey;
+  padding: 0 0;
+  margin: 0 0;
 }
 
-.icecream {
-  background-color: blue;
+body, html {
+  font-size: 100%;
+}
+
+.primary-navbar {
+  height: 60px;
+  width: 100vw;
+  background-color: #007eff;
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-family: "Open Sans", arial, sans-serif;
+}
+
+.primary-navbar .hamburger-icon {
+  margin-right: auto;
+}
+
+.primary-navbar .sign-in {
+  margin-left: auto;
+}
+
+.outer-wrapper {
+  padding-top: 60px;
+}
+
+.hero-image {
+  height: 570px;
+  width: 100vw;
+  color: white;
+  background-image: url("../img/Heroimage.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero-image .hero-overlay {
+  background-color: rgba(0, 55, 113, 0.5);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero-image .cta-wrapper {
+  width: 460px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  bottom: 400px;
+  font-family: "Open Sans", arial, sans-serif;
+}
+
+.hero-image .cta-wrapper h1 {
+  font-variant: small-caps;
+  letter-spacing: 0.3rem;
+  font-size: 2.75rem;
+  padding-bottom: 0.39rem;
+}
+
+.hero-image .cta-wrapper h1 span {
+  font-size: 2.35rem;
+}
+
+.hero-image .cta-wrapper p {
+  font-size: 1.65rem;
+  line-height: 1.65rem;
+  padding-bottom: 1.2rem;
+}
+
+.hero-image .cta-wrapper .cta-button {
+  width: 280px;
+  height: 60px;
+  border-radius: 14px;
+  background-color: #006ddd;
+  border: 0;
+  font-family: "Open Sans", arial, sans-serif;
+  color: white;
+  font-size: 1.35rem;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=styles.css.map */
