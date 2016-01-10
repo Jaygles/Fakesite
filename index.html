@@ -11,7 +11,11 @@
 
 <title>Fakesite v 1.0</title>
 <link rel="stylesheet" href="/css/styles.css" />
+
+<noscript><link rel="stylesheet" href="/css/noscript-styles.css" /></noscript>
+
 <script type="text/javascript" src="/js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="/js/behaviors.js"></script>
 
 </head>
 <body>
@@ -34,12 +38,8 @@
 </nav>
 
 
-<!-- WRAPPER -->
-<div class="outer-wrapper">
-
-
 <!-- HERO -->
-<div class="hero-image">
+<header class="hero-image">
 	<div class="hero-overlay"></div>
 	<div class="cta-wrapper">
 		<h1><span>F</span>ake<span>S</span>ite</h1>
@@ -48,23 +48,27 @@
 			Download Now
 		</button>
 	</div>
-</div>
+</header>
+
+
+<!-- MAIN -->
+<main>
 
 
 <!-- ABOUT -->
-<div class="content-wrapper">
-	<div class="content-section about-section">
+<section class="content-section">
+	<div class="content-wrapper about-content">
 		<h1>About</h1>
 		<p>Lorem ipsum dolor sit amet, facilisi forensibus an mea, ei illud ponderum prodesset sit. Sed at ridens noster indoctum, putent aperiri vel ex. Quot tacimates posidonium eum cu, per perfecto adipisci pertinax et. Duis vitae suscipiantur et eos, paulo ignota populo ea vel. Quod theophrastus ius no.</p>
 		<p>Cum wisi veniam altera ei. Vix id dictas iuvaret dissentiunt. Ea has facete accusamus, ne eam audiam vituperatoribus. Eos id appareat instructior, an mel primis labores. Te mea aperiri nominati.</p>
 		<div class="about-image"></div>
 	</div>
-</div>
+</section>
 
 
 <!-- EXPERIENCE -->
-<div class="content-wrapper">
-	<div class="content-section experience-section">
+<section class="content-section">
+	<div class="content-wrapper experience-content">
 		<h1>Experience</h1>
 		<div class="icon-wrapper">
 			<div class="icon-container">
@@ -84,12 +88,12 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
 
 <!-- CONTACT -->
-<div class="content-wrapper">
-	<div class="content-section contact-section placeholder">
+<section class="content-section">
+	<div class="content-wrapper contact-content">
 		<h1>Contact</h1>
 		<form>
 			<div>
@@ -105,43 +109,62 @@
 			</div>
 		</form>
 	</div>
-</div>
+</section>
+
+</main>
 
 
 <!-- FOOTER -->
-<div class="footer-wrapper">
-	<div class="social-section">
-		<h1>Social</h1>
-	</div>
-	<div class="related-section">
-		<h1>Related</h1>
-		<ul>
-			<li>one</li>
-			<li>two</li>
-			<li>three</li>
-			<li>four</li>
-			<!--
-			<li>five</li>
-			<li>six</li>
-			<li>seven</li>
-			<li>eight</li>
-			-->
-		</ul>
-		<div class="related-links">
+<footer>
+	<div class="footer-wrapper">
+		<div class="footer-container">
+			<div class="social-section">
+				<h1>Social</h1>
+				<div class="flex-parent icon-container">
+					<div class="social-icon facebook-icon">
+						<a href="http://www.facebook.com/"> <img src="../img/facebooklogo.png" style="width:64px;height:64px;"></a>
+					</div>
+					<div class="social-icon twitter-icon">
+						<a href="http://www.twitter.com/"> <img src="../img/twitterlogo.png" style="width:64px;height:64px;"></a>
+					</div>
+				</div>
+				<div class="flex-parent icon-container">
+					<div class="social-icon instagram-icon">
+						<a href="http://www.instagram.com/"> <img src="../img/instagramlogo.png" style="width:64px;height:64px;"></a>
+					</div>
+					<div class="social-icon linkedin-icon">
+						<a href="http://www.linkedin.com/"> <img src="../img/linkedinlogo.png" style="width:64px;height:64px;"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-container">
+			<div class="related-section">
+				<h1>Related</h1>
+				<ul class="related-links">
+					<li>link 1</li>
+					<li>link 2</li>
+					<li>link 3</li>
+					<li>link 4</li>
+					<li>link 5</li>
+					<li>link 6</li>
+					<li>link 7</li>
+					<li>link 8</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-container">
+			<div class="other-section">
+				<h1>Other</h1>
+				<p>lorem ipsum dolor sit amet, con sectetur adipiscing elit. Sed frin gilla quis nibh nec tincidunt. Proin pellentesque lacus sed. In teger id elit tempor.</p>
+			</div>
 		</div>
 	</div>
-	<div class="other-section">
-		<h1>Other</h1>
-		<p>Lorem ipsum dolor sit amet, facilisi forensibus an mea, ei illud ponderum prodesset sit. Sed at ridens noster indoctum, putent aperiri vel ex. Quot tacimates posidonium eum cu, per perfecto adipisci pertinax et. Duis vitae suscipiantur et eos, paulo ignota populo ea vel.</p>
+	<div class="bottom-bar">
+		<span>&#169; 2016 C. Persinger</span>
 	</div>
-</div>
+</footer>
 
-
-
-
-
-
-</div>
 
 </body>
 </html>
