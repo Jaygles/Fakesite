@@ -3,8 +3,42 @@
 	margin: 0 0;
 }
 
-body, html {
+html, body {
 	font-size: 100%;
+}
+
+
+// OFFCANVAS
+.offcanvas-navbar {
+	width: 320px;
+	height: 100vh;
+	position: fixed;
+	left: -320px;
+	padding-top: 60px;
+	z-index: 750;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: all 600ms linear;
+	background-color: $color-offcanvasbg;
+	ul {
+		width: 75%;
+		margin: 0 auto;
+		list-style: none;
+		padding-top: 75px;
+		li {
+			width: 100%;
+			text-align: center;
+			padding: 0.75rem 0;
+			a {
+				color: $color-white;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-family: $font-opensans;
+				font-size: 0.95rem;
+				letter-spacing: 0.1rem;
+			}
+		}
+	}
 }
 
 
@@ -20,6 +54,10 @@ body, html {
 	font-family: $font-opensans;
 	z-index: 1000;
 	.hamburger-icon {
+		height: 31px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
 		margin-right: auto;
 		margin-left: 1rem;
 		.hamburger-layer {
@@ -164,8 +202,16 @@ body, html {
 		justify-content: space-around;
 		width: 100%;
 		margin: 0 auto;
+		padding-bottom: 4.5rem;
+		@media #{$medium-down} {
+			flex-wrap: wrap;
+		}
 		.icon-container {
-			width: 23%;
+			width: 18%;
+			@media #{$medium-down} {
+				width: 100%;
+				padding-bottom: 3rem;
+			}
 			.icon {
 				width: 178px;
 				height: 178px;
@@ -175,6 +221,10 @@ body, html {
 			}
 			p {
 				padding-top: 1rem;
+				@media #{$medium-down} {
+					width: 50%;
+					margin: 0 auto;
+				}
 			}
 		}
 	}
@@ -380,42 +430,24 @@ footer {
 }
 
 
-@media #{$small-only} {
-	.footer-wrapper {
-		flex-wrap: wrap !important;
-		.footer-container {
-			width: 99%;
+@media #{$medium-down} {
+	footer {
+		.footer-wrapper {
+			flex-wrap: wrap;
+			.footer-container {
+				width: 100%;
+				padding-bottom: 3rem;
+				border-right: 0;
+				border-bottom: 1px solid;
+				.related-section .related-links li {
+					width: 50%;
+					text-align: center;
+					&:nth-of-type(even) {
+						width: 50%;
+						text-align: center;
+					}
+				}
+			}
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

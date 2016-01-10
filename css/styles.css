@@ -4,8 +4,44 @@
   margin: 0 0;
 }
 
-body, html {
+html, body {
   font-size: 100%;
+}
+
+.offcanvas-navbar {
+  width: 320px;
+  height: 100vh;
+  position: fixed;
+  left: -320px;
+  padding-top: 60px;
+  z-index: 750;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 600ms linear;
+  transition: all 600ms linear;
+  background-color: rgba(68, 160, 255, 0.65);
+}
+
+.offcanvas-navbar ul {
+  width: 75%;
+  margin: 0 auto;
+  list-style: none;
+  padding-top: 75px;
+}
+
+.offcanvas-navbar ul li {
+  width: 100%;
+  text-align: center;
+  padding: 0.75rem 0;
+}
+
+.offcanvas-navbar ul li a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Open Sans", arial, sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.1rem;
 }
 
 .primary-navbar {
@@ -27,6 +63,19 @@ body, html {
 }
 
 .primary-navbar .hamburger-icon {
+  height: 31px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   margin-right: auto;
   margin-left: 1rem;
 }
@@ -180,10 +229,26 @@ body, html {
           justify-content: space-around;
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 4.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .experience-content .icon-wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
 }
 
 .experience-content .icon-wrapper .icon-container {
-  width: 23%;
+  width: 18%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .experience-content .icon-wrapper .icon-container {
+    width: 100%;
+    padding-bottom: 3rem;
+  }
 }
 
 .experience-content .icon-wrapper .icon-container .icon {
@@ -196,6 +261,13 @@ body, html {
 
 .experience-content .icon-wrapper .icon-container p {
   padding-top: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .experience-content .icon-wrapper .icon-container p {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 .icon-left {
@@ -419,14 +491,25 @@ footer .bottom-bar span {
   margin-right: 1rem;
 }
 
-@media only screen and (min-width: lower-bound(30.063em, 40em)) and (max-width: upper-bound(30.063em, 40em)) {
-  .footer-wrapper {
-    -webkit-flex-wrap: wrap !important;
-        -ms-flex-wrap: wrap !important;
-            flex-wrap: wrap !important;
+@media only screen and (max-width: 1024px) {
+  footer .footer-wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
   }
-  .footer-wrapper .footer-container {
-    width: 99%;
+  footer .footer-wrapper .footer-container {
+    width: 100%;
+    padding-bottom: 3rem;
+    border-right: 0;
+    border-bottom: 1px solid;
+  }
+  footer .footer-wrapper .footer-container .related-section .related-links li {
+    width: 50%;
+    text-align: center;
+  }
+  footer .footer-wrapper .footer-container .related-section .related-links li:nth-of-type(even) {
+    width: 50%;
+    text-align: center;
   }
 }
 
