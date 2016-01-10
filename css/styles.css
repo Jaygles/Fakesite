@@ -9,8 +9,8 @@ body, html {
 }
 
 .primary-navbar {
-  height: 60px;
   width: 100%;
+  height: 60px;
   background-color: #007eff;
   position: fixed;
   display: -webkit-box;
@@ -64,13 +64,10 @@ body, html {
   margin-right: 1rem;
 }
 
-.outer-wrapper {
-  padding-top: 60px;
-}
-
 .hero-image {
-  height: 570px;
   width: 100%;
+  height: 570px;
+  padding-top: 60px;
   color: white;
   background-image: url("../img/Heroimage.jpg");
   background-size: cover;
@@ -126,43 +123,43 @@ body, html {
   text-transform: uppercase;
 }
 
-.content-wrapper {
+.content-section {
   width: 100%;
   background-color: white;
   padding: 1.75rem 0;
 }
 
-.content-wrapper:nth-child(2n+1) {
+.content-section:nth-of-type(even) {
   background-color: #f2f2f2;
 }
 
-.content-wrapper .content-section {
+.content-section .content-wrapper {
   font-family: "Open Sans", arial, sans-serif;
   max-width: 60em;
   margin: 0 auto;
 }
 
-.content-wrapper .content-section h1 {
+.content-section .content-wrapper h1 {
   font-size: 2.5rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   padding-bottom: 1.5rem;
 }
 
-.content-wrapper .content-section p {
+.content-section .content-wrapper p {
   text-align: center;
   font-size: 1.36rem;
 }
 
-.content-wrapper:nth-child(2n+1) .content-section h1 {
+.content-section:nth-of-type(even) .content-wrapper h1 {
   text-align: right;
 }
 
-.about-section p {
+.about-content p {
   padding-bottom: 1.5rem;
 }
 
-.about-section .about-image {
+.about-content .about-image {
   width: 130px;
   height: 130px;
   border-radius: 65px;
@@ -173,7 +170,7 @@ body, html {
   margin: 0 auto;
 }
 
-.experience-section .icon-wrapper {
+.experience-content .icon-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -185,11 +182,11 @@ body, html {
   margin: 0 auto;
 }
 
-.experience-section .icon-wrapper .icon-container {
+.experience-content .icon-wrapper .icon-container {
   width: 23%;
 }
 
-.experience-section .icon-wrapper .icon-container .icon {
+.experience-content .icon-wrapper .icon-container .icon {
   width: 178px;
   height: 178px;
   border-radius: 88px;
@@ -197,7 +194,7 @@ body, html {
   margin: 0 auto;
 }
 
-.experience-section .icon-wrapper .icon-container p {
+.experience-content .icon-wrapper .icon-container p {
   padding-top: 1rem;
 }
 
@@ -222,12 +219,12 @@ body, html {
   background-repeat: no-repeat;
 }
 
-.contact-section form {
+.contact-content form {
   width: 100%;
   margin: 0 auto;
 }
 
-.contact-section form div {
+.contact-content form div {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -237,7 +234,7 @@ body, html {
           justify-content: space-around;
 }
 
-.contact-section form div input {
+.contact-content form div input {
   font-family: "Open Sans", arial, sans-serif;
   font-size: 1.3rem;
   color: #d5d5d5;
@@ -252,13 +249,13 @@ body, html {
   padding: 0.55rem 0.55rem;
 }
 
-.contact-section form div button {
+.contact-content form div button {
   font-family: "Open Sans", arial, sans-serif;
   clear: both;
   font-size: 1.3rem;
 }
 
-.contact-section form div .contact-button {
+.contact-content form div .contact-button {
   background-color: #2683e2;
   width: 45%;
   max-width: 250px;
@@ -270,7 +267,7 @@ body, html {
   text-transform: uppercase;
 }
 
-.contact-section form textarea {
+.contact-content form textarea {
   font-family: "Open Sans", arial, sans-serif;
   font-size: 1.3rem;
   color: #d5d5d5;
@@ -284,6 +281,160 @@ body, html {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
   padding: 0.55rem 0.55rem;
+}
+
+footer .footer-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #0062c7;
+  font-family: "Open Sans", arial, sans-serif;
+}
+
+footer .footer-wrapper .footer-container {
+  width: 33.33333%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: white;
+  border-right: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+footer .footer-wrapper .footer-container h1 {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  border-bottom: 1px solid white;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+footer .footer-wrapper .footer-container:last-of-type {
+  border: 0;
+}
+
+footer .footer-wrapper .footer-container .social-section h1 {
+  width: 144px;
+}
+
+footer .footer-wrapper .footer-container .social-section .icon-container {
+  width: 166px;
+  margin: 0 auto;
+}
+
+footer .footer-wrapper .footer-container .social-section .icon-container:first-of-type {
+  padding-bottom: 1rem;
+}
+
+footer .footer-wrapper .footer-container .social-section .icon-container .social-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+footer .footer-wrapper .footer-container .social-section .icon-container a {
+  background-color: transparent;
+}
+
+footer .footer-wrapper .footer-container .social-section .icon-container .facebook-icon {
+  width: 64px;
+  height: 64px;
+}
+
+footer .footer-wrapper .footer-container .social-section .icon-container .twitter-icon {
+  width: 64px;
+  height: 64px;
+}
+
+footer .footer-wrapper .footer-container .social-section .icon-container .instagram-icon {
+  width: 64px;
+  height: 64px;
+}
+
+footer .footer-wrapper .footer-container .social-section .icon-container .linkedin-icon {
+  width: 64px;
+  height: 64px;
+}
+
+footer .footer-wrapper .footer-container .related-section h1 {
+  width: 172px;
+}
+
+footer .footer-wrapper .footer-container .related-section .related-links {
+  display: block;
+  text-transform: uppercase;
+  list-style: none;
+  margin: 0 auto;
+  height: 132px;
+  width: 60%;
+  min-width: 114px;
+}
+
+footer .footer-wrapper .footer-container .related-section .related-links li {
+  font-size: 170%;
+  width: 70%;
+  padding-bottom: 3px;
+  float: left;
+  white-space: nowrap;
+}
+
+footer .footer-wrapper .footer-container .related-section .related-links li:nth-of-type(even) {
+  text-align: left;
+  width: 30%;
+}
+
+footer .footer-wrapper .footer-container .other-section {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+footer .footer-wrapper .footer-container .other-section h1 {
+  width: 132px;
+}
+
+footer .footer-wrapper .footer-container .other-section p {
+  width: 22rem;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  line-height: 29px;
+}
+
+footer .bottom-bar {
+  font-family: "Open Sans", arial, sans-serif;
+  font-size: 1.3rem;
+  color: white;
+  background-color: #004c9b;
+  text-align: right;
+}
+
+footer .bottom-bar span {
+  margin-right: 1rem;
+}
+
+@media only screen and (min-width: lower-bound(30.063em, 40em)) and (max-width: upper-bound(30.063em, 40em)) {
+  .footer-wrapper {
+    -webkit-flex-wrap: wrap !important;
+        -ms-flex-wrap: wrap !important;
+            flex-wrap: wrap !important;
+  }
+  .footer-wrapper .footer-container {
+    width: 99%;
+  }
+}
+
+.flex-parent {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /*# sourceMappingURL=styles.css.map */

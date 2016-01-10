@@ -1,11 +1,37 @@
-// color palette
+// BREAKPOINTS
+$breakpoint-xsmall: (0em, 30em); // 0px to 480px
+$breakpoint-small: (30.063em, 40em); // 481px to 640px
+$breakpoint-medium: (40.063em, 64em); // 641px to 1024px
+$breakpoint-large: (64.063em, 120em); // 1025px to 1920px
+$breakpoint-xlarge: (120.063em); // 1921px+
+
+
+// MEDIA QUERIES
+$xsmall-only: "only screen and (max-width: #{upper-bound($breakpoint-xsmall)})" !default;
+
+$small-up: "only screen and (min-width: #{lower-bound($breakpoint-small)})";
+$small-only: "only screen and (min-width: #{lower-bound($breakpoint-small)}) and (max-width: #{upper-bound($breakpoint-small)})" !default;
+
+$medium-up: "only screen and (min-width: #{lower-bound($breakpoint-medium)})";
+$medium-only: "only screen and (min-width: #{lower-bound($breakpoint-medium)}) and (max-width: #{upper-bound($breakpoint-medium)})" !default;
+
+$large-up: "only screen and (min-width: #{lower-bound($breakpoint-large)})";
+$large-only: "only screen and (min-width: #{lower-bound($breakpoint-large)}) and (max-width: #{upper-bound($breakpoint-large)})" !default;
+
+$xlarge-only: "only screen and (min-width: #{lower-bound($breakpoint-xlarge)})" !default;
+
+
+// COLOR PALETTE
 $color-white: rgba( 255, 255, 255, 1);
 $color-blue1: rgba( 0, 126, 255, 1);
 $color-blue2: rgba( 0, 109, 221, 1);
 $color-blue3: rgba( 38, 131, 226, 1);
+$color-blue4: rgba( 0, 98, 199, 1);
+$color-blue5: rgba( 0, 76, 155, 1);
 
 $color-greybg: rgba( 242, 242, 242, 1);
 $color-formtext: rgba( 213, 213, 213, 1);
 
-//fonts
+
+// FONTS
 $font-opensans: "Open Sans", arial, sans-serif;
