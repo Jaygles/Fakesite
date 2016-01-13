@@ -86,9 +86,20 @@ html, body {
 			}
 		}
 	}
+		.hamburger-icon:hover {
+			cursor: pointer;
+	}
 	.sign-in {
 		margin-left: auto;
 		margin-right: 1rem;
+		a:link {
+			color: $color-white;
+			text-decoration: none;
+		}
+		a:visited {
+			color: $color-white;
+			text-decoration: none;
+		}
 	}
 }
 
@@ -113,7 +124,7 @@ html, body {
 		right: 0;
 	}
 	.cta-wrapper {
-		width: 460px;
+		width: auto;
 		margin: 0 auto;
 		text-align: center;
 		position: relative;
@@ -129,9 +140,11 @@ html, body {
 			}
 		}
 		p {
+			width: 370px;
 			font-size: 1.65rem;
 			line-height: 1.65rem;
 			padding-bottom: 1.2rem;
+			margin: 0 auto;
 		}
 		.cta-button {
 			width: 280px;
@@ -144,6 +157,9 @@ html, body {
 			font-size: 1.35rem;
 			text-transform: uppercase;
 		}
+		.download-button {
+
+		}
 	}
 }
 
@@ -152,7 +168,7 @@ html, body {
 .content-section {
 	width: 100%;
 	background-color: $color-white;
-	padding: 1.75rem 0;
+	padding: 0.75rem 0;
 	&:nth-of-type(even) {
 		background-color: $color-greybg;
 	}
@@ -160,6 +176,7 @@ html, body {
 		font-family: $font-opensans;
 		max-width: 60em;
 		margin: 0 auto;
+		padding: 0 2rem;
 		h1 {
 			font-size: 2.5rem;
 			letter-spacing: 0.2rem;
@@ -178,9 +195,14 @@ html, body {
 
 
 //ABOUT
+.about-bookmark {
+	padding-bottom: 50px;
+}
 .about-content {
 	p {
+		max-width: 960px;
 		padding-bottom: 1.5rem;
+		letter-spacing: 2.5px;
 	}
 	.about-image {
 		width: 130px;
@@ -196,18 +218,22 @@ html, body {
 
 
 //EXPERIENCE
+.experience-bookmark {
+	padding-bottom: 50px;
+}
 .experience-content {
 	.icon-wrapper {
 		display: flex;
 		justify-content: space-around;
-		width: 100%;
+		width: 86%;
 		margin: 0 auto;
 		padding-bottom: 4.5rem;
+		padding-top: 2rem;
 		@media #{$medium-down} {
 			flex-wrap: wrap;
 		}
 		.icon-container {
-			width: 18%;
+			width: 24%;
 			@media #{$medium-down} {
 				width: 100%;
 				padding-bottom: 3rem;
@@ -255,6 +281,9 @@ html, body {
 
 
 //CONTACT
+.contact-bookmark {
+	padding-bottom: 50px;
+}
 .contact-content {
 	form {
 		width: 100%;
@@ -428,6 +457,68 @@ footer {
 		}
 	}
 }
+
+
+//MODAL
+.modal-wrapper {
+	background-color: rgba( 0, 0, 0, 0.65 );
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 600ms linear;
+	.modal {
+		background-color: $color-white;
+		position: relative;
+		margin: 20% auto;
+		width: 50%;
+		min-width: 300px;
+		max-width: 540px;
+		height: 40vh;
+		min-height: 250px;
+		max-height: 448px;
+		border-radius: 8px;
+		text-align: center;
+		font-family: $font-opensans;
+		padding: 1.5rem 1.5rem;
+		h1 {
+			width: auto;
+			padding-top: 2vh;
+			padding-bottom: 8vh;
+			text-transform: uppercase;
+			font-style: italic;
+			letter-spacing: 1.5px;
+		}
+		p {
+			padding-top: 0;
+			padding-bottom: 14vh;
+			font-size: 140%;
+		}
+		.modal-button {
+			background-color: $color-blue4;
+			width: 30%;
+			padding: 0.5rem 0;
+			margin-top: 0;
+			border: 0;
+			border-radius: 14px;
+			color: white;
+			font-size: 110%;
+			@media #{$small-down} {
+			}
+		}
+		.modal-close {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 0.5rem;
+		}
+	}
+}
+
+
 
 
 @media #{$medium-down} {

@@ -108,9 +108,23 @@ html, body {
   position: absolute;
 }
 
+.primary-navbar .hamburger-icon:hover {
+  cursor: pointer;
+}
+
 .primary-navbar .sign-in {
   margin-left: auto;
   margin-right: 1rem;
+}
+
+.primary-navbar .sign-in a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.primary-navbar .sign-in a:visited {
+  color: white;
+  text-decoration: none;
 }
 
 .hero-image {
@@ -135,7 +149,7 @@ html, body {
 }
 
 .hero-image .cta-wrapper {
-  width: 460px;
+  width: auto;
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -155,9 +169,11 @@ html, body {
 }
 
 .hero-image .cta-wrapper p {
+  width: 370px;
   font-size: 1.65rem;
   line-height: 1.65rem;
   padding-bottom: 1.2rem;
+  margin: 0 auto;
 }
 
 .hero-image .cta-wrapper .cta-button {
@@ -175,7 +191,7 @@ html, body {
 .content-section {
   width: 100%;
   background-color: white;
-  padding: 1.75rem 0;
+  padding: 0.75rem 0;
 }
 
 .content-section:nth-of-type(even) {
@@ -186,6 +202,7 @@ html, body {
   font-family: "Open Sans", arial, sans-serif;
   max-width: 60em;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .content-section .content-wrapper h1 {
@@ -204,8 +221,14 @@ html, body {
   text-align: right;
 }
 
+.about-bookmark {
+  padding-bottom: 50px;
+}
+
 .about-content p {
+  max-width: 960px;
   padding-bottom: 1.5rem;
+  letter-spacing: 2.5px;
 }
 
 .about-content .about-image {
@@ -219,6 +242,10 @@ html, body {
   margin: 0 auto;
 }
 
+.experience-bookmark {
+  padding-bottom: 50px;
+}
+
 .experience-content .icon-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -227,9 +254,10 @@ html, body {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  width: 100%;
+  width: 86%;
   margin: 0 auto;
   padding-bottom: 4.5rem;
+  padding-top: 2rem;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -241,7 +269,7 @@ html, body {
 }
 
 .experience-content .icon-wrapper .icon-container {
-  width: 18%;
+  width: 24%;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -289,6 +317,10 @@ html, body {
   background-size: 92px 70px;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.contact-bookmark {
+  padding-bottom: 50px;
 }
 
 .contact-content form {
@@ -489,6 +521,68 @@ footer .bottom-bar {
 
 footer .bottom-bar span {
   margin-right: 1rem;
+}
+
+.modal-wrapper {
+  background-color: rgba(0, 0, 0, 0.65);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 600ms linear;
+  transition: all 600ms linear;
+}
+
+.modal-wrapper .modal {
+  background-color: white;
+  position: relative;
+  margin: 20% auto;
+  width: 50%;
+  min-width: 300px;
+  max-width: 540px;
+  height: 40vh;
+  min-height: 250px;
+  max-height: 448px;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Open Sans", arial, sans-serif;
+  padding: 1.5rem 1.5rem;
+}
+
+.modal-wrapper .modal h1 {
+  width: auto;
+  padding-top: 2vh;
+  padding-bottom: 8vh;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 1.5px;
+}
+
+.modal-wrapper .modal p {
+  padding-top: 0;
+  padding-bottom: 14vh;
+  font-size: 140%;
+}
+
+.modal-wrapper .modal .modal-button {
+  background-color: #0062c7;
+  width: 30%;
+  padding: 0.5rem 0;
+  margin-top: 0;
+  border: 0;
+  border-radius: 14px;
+  color: white;
+  font-size: 110%;
+}
+
+.modal-wrapper .modal .modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
 }
 
 @media only screen and (max-width: 1024px) {

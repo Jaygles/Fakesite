@@ -24,10 +24,10 @@
 <!-- OFFCANVAS -->
 <nav class="offcanvas-navbar">
 	<ul>
-		<li><a href="#">Home</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="#">Experience</a></li>
-		<li><a href="#">Contact</a></li>
+		<li><a href="#Home">Home</a></li>
+		<li><a href="#About">About</a></li>
+		<li><a href="#Experience">Experience</a></li>
+		<li><a href="#Contact">Contact</a></li>
 	</ul>
 </nav>
 
@@ -38,13 +38,13 @@
 		<i class="hamburger-layer"></i>
 	</div>
 	<div class="sign-in">
-		SIGN IN
+		<a href="#signIn">SIGN IN</a>
 	</div>
 </nav>
 
 
 <!-- HERO -->
-<header class="hero-image">
+<header class="hero-image" id="Home">
 	<div class="hero-overlay"></div>
 	<div class="cta-wrapper">
 		<h1><span>F</span>ake<span>S</span>ite</h1>
@@ -61,17 +61,19 @@
 
 
 <!-- ABOUT -->
+<div class="about-bookmark" id="About"></div>
 <section class="content-section">
 	<div class="content-wrapper about-content">
 		<h1>About</h1>
-		<p>Lorem ipsum dolor sit amet, facilisi forensibus an mea, ei illud ponderum prodesset sit. Sed at ridens noster indoctum, putent aperiri vel ex. Quot tacimates posidonium eum cu, per perfecto adipisci pertinax et. Duis vitae suscipiantur et eos, paulo ignota populo ea vel. Quod theophrastus ius no.</p>
-		<p>Cum wisi veniam altera ei. Vix id dictas iuvaret dissentiunt. Ea has facete accusamus, ne eam audiam vituperatoribus. Eos id appareat instructior, an mel primis labores. Te mea aperiri nominati.</p>
+		<p>Praesent id urna porttitor, facilisis nulla in, tincidunt tortor. Donec id sagittis odio, ultricies tempus urna. Integer elementum placerat augue in iaculis.</p>
+		<p>Donec nisl urna, condimentum et laoreet sit amet vehicula sit amet ligula. Quisque et turpis ipsum. Phasellus dictum erat neque, non placerat mi iaculis et. Sed iaculis leo nec dui ultricies ultricies.</p>
 		<div class="about-image"></div>
 	</div>
 </section>
 
 
 <!-- EXPERIENCE -->
+<div class="experience-bookmark" id="Experience"></div>
 <section class="content-section">
 	<div class="content-wrapper experience-content">
 		<h1>Experience</h1>
@@ -97,6 +99,7 @@
 
 
 <!-- CONTACT -->
+<div class="contact-bookmark" id="Contact"></div>
 <section class="content-section">
 	<div class="content-wrapper contact-content">
 		<h1>Contact</h1>
@@ -172,6 +175,14 @@
 
 
 <!-- MODAL -->
+<div class="modal-wrapper">
+	<div class="modal">
+		<h1>Modal</h1>
+		<p>This is a modal window.</p>
+		<button class="modal-button">Submit</button>
+		<div class="modal-close">X</div>
+	</div>
+</div>
 
 
 </body>
