@@ -1,8 +1,12 @@
 #Fakesite  
-This is a test website by Jacob Sullivan  
+This is a developed in tandem by
 
-Technologies:  
+Jacob Sullivan https://github.com/Jaygles
+Cody Persinger https://github.com/codypersinger
+
+Technologies:
+
 Semantic HTML5  
-SASS  
+SASS/SCSS
 Javascript  
-JQuery  
+JQuery
